@@ -1,0 +1,49 @@
+.items {
+  flex-basis: 450px;
+  position: relative;
+  margin-top: 50px;
+}
+.items .pic {
+  width: 100%;
+  position: relative;
+}
+.items .pic::before {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #ff9900;
+  z-index: -1;
+  border-radius: 100%;
+  transform: scale(0.1);
+  transition: 0.5s;
+}
+.items:hover .pic::before {
+  transform: scale(1);
+}
+.items > .text > p {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 900;
+  color: #ff9900;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.items > .text .button {
+  height: 50px;
+  width: 140px;
+  background-color: #ff9900;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.items > .text .button:hover {
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+}

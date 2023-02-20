@@ -1,0 +1,84 @@
+.items {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.items .pic {
+  height: 500px;
+  width: 500px;
+  position: relative;
+  
+}
+.items .pic .changer {
+  height: 100%;
+  display: flex;
+}
+.items .pic .changer .imageBox {
+  height: 100%;
+  min-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items .headerText {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 900;
+  color: #ff9900;
+}
+.items .counter {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.items .counter .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.items .counter .activeDot {
+  height: 10px;
+  transition: 0.5s;
+  width: 10px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+}
+@media only screen and (min-width: 300px) {
+  .items .pic{
+    width: 250px;
+    height: 250px;
+  }
+  .items .headerText{
+    color: #ff5100;
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .items .pic{
+    width: 400px;
+    height: 400px;
+  }
+  .items .headerText{
+    
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .items .pic{
+    width: 500px;
+    height: 500px;
+  }
+}

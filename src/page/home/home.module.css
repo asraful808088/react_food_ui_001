@@ -1,0 +1,290 @@
+.root {
+  position: relative;
+  margin: auto;
+  overflow-x: hidden;
+}
+.root .headerContainer {
+  width: 100%;
+  background: url("../../assets/bg/home/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 1000px;
+  display: flex;
+  min-height: 600px;
+  justify-content: center;
+}
+
+.root .headerContainer .navButton > img {
+  cursor: pointer;
+}
+.root .headerContainer .items {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.root .headerContainer .navButton {
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  z-index: 0;
+  left: 30px;
+  top: 30px;
+  cursor: pointer;
+  z-index: 1111111;
+  display: none;
+}
+.root .headerContainer .items > h1 {
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+.root .headerContainer .items > h1 > span {
+  color: #ffffff;
+}
+.root .headerContainer .items > .hr {
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: black;
+}
+.root .headerContainer .items > p {
+  font-weight: 500;
+}
+.root .main_container {
+  width: 100%;
+}
+.root .main_container > h1 {
+  margin: auto;
+  width: fit-content;
+  position: relative;
+  font-size: 150px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 145, 0);
+  color: transparent;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.root .main_container .itemsBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.root .main_container .foodDes {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.root .main_container .foodDes .image {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root .main_container .foodDes .des {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+.root .main_container .foodDes .des h1 {
+  font-size: 100px;
+  text-transform: capitalize;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 145, 0);
+}
+.root .main_container .foodDes .des p {
+  font-size: 30px;
+  text-align: left;
+}
+.root .main_container .payItem {
+  position: relative;
+  width: 900px;
+  display: flex;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.root .main_container .collectMethod {
+  width: 100%;
+  font-size: 100px;
+  text-align: center;
+  color: rgb(255, 123, 0);
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.root .main_container .payItem .items {
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.root .main_container .payItem .items:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.root .main_container .payItem .items .name {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 300px) {
+  .root .headerContainer {
+    height: 500px;
+  }
+  .root .headerContainer .items {
+    display: none;
+  }
+  .root .headerContainer .navButton {
+    display: block;
+  }
+  .root .main_container > h1 {
+    font-size: 30px;
+  }
+  .root .main_container .foodDes {
+    flex-direction: column;
+  }
+  .root .main_container .foodDes .image {
+    width: 100%;
+  }
+  .root .main_container .foodDes .des {
+    width: 100%;
+    margin-left: 30px;
+    margin-left: 10px;
+  }
+  .root .main_container .foodDes .des h1 {
+    font-size: 30px;
+  }
+  .root .main_container .foodDes .des p {
+    font-size: 19px;
+  }
+  .root .main_container .collectMethod {
+    font-size: 30px;
+  }
+  .root .main_container .payItem {
+    flex-direction: column;
+    width: 100%;
+  }
+  .root .main_container .payItem .items {
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .root .main_container > h1 {
+    font-size: 50px;
+  }
+  .root .main_container .foodDes .des h1 {
+    font-size: 40px;
+  }
+  .root .main_container .foodDes .des p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .root .headerContainer {
+    height: 700px;
+  }
+  .root .main_container > h1 {
+    font-size: 60px;
+  }
+  .root .main_container .foodDes .des h1 {
+    font-size: 50px;
+  }
+  .root .main_container .collectMethod {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .root .main_container .foodDes .des h1 {
+    font-size: 70px;
+  }
+  .root .main_container .collectMethod {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .root .headerContainer {
+    height: 1000px;
+  }
+  .root .main_container > h1 {
+    font-size: 100px;
+  }
+  .root .headerContainer .navButton {
+    display: none;
+  }
+  .root .headerContainer .items {
+    display: flex;
+  }
+  .root .headerContainer .items > h1 {
+    font-size: 70px;
+  }
+  .root .headerContainer .items > p {
+    font-size: 25px;
+  }
+  .root .main_container .foodDes {
+    flex-direction: row;
+  }
+  .root .main_container .payItem {
+    flex-direction: row;
+    width: 900px;
+  }
+  .root .main_container .collectMethod {
+    font-size: 100px;
+  }
+  .root .main_container .foodDes .image {
+    width: 50%;
+  }
+  .root .main_container .foodDes .des {
+    width: 50%;
+    margin-left: 0px;
+    margin-left: 0px;
+  }
+  .root .main_container .foodDes .des h1 {
+    font-size: 100px;
+  }
+  .root .main_container .foodDes .des p {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .root .main_container > h1 {
+    font-size: 120px;
+  }
+  .root .headerContainer .items > h1 {
+    font-size: 100px;
+  }
+  .root .headerContainer .items > p {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .root {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 2601px) {
+  .root {
+    width: 2600px;
+  }
+}

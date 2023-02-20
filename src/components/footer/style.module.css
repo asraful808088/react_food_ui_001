@@ -1,0 +1,112 @@
+.footer {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  background: rgb(255, 145, 0);
+  margin: 00;
+  position: relative;
+  bottom: 0;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .items {
+  margin-top: 100px;
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+.footer .items > h1 {
+  height: 30%;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.footer .items > p {
+  font-size: 30px;
+  margin-top: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer .items .imageContainer {
+  height: 70%;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .items .imageContainer > .icon {
+  height: 45%;
+  width: 40%;
+  position: relative;
+  left: 10%;
+}
+
+@media only screen and (min-width: 300px) {
+   .footer .items {
+    height: 300px;
+    width: 300px;
+  }
+   .footer .items > h1 {
+    font-size: 40px;
+  }
+   .footer .items > p {
+    font-size: 20px;
+  }
+   .footer {
+    height: auto;
+  }
+   .footer {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 450px) {
+   .main_container > h1 {
+    font-size: 50px;
+  }
+   .main_container .foodDes .des h1 {
+    font-size: 40px;
+  }
+   .main_container .foodDes .des p {
+    font-size: 25px;
+  }
+
+   .footer {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+   .footer {
+    height: 500px;
+    flex-direction: row;
+  }
+   .footer .items {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+   .footer .items > h1 {
+    font-size: 50px;
+  }
+   .footer .items > p {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .root {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 2601px) {
+  .root {
+    width: 2600px;
+  }
+}
